@@ -24,7 +24,6 @@
 
 			</div>
 		</div>
-		@include('pages.layout.modal')
 		<script src="{{ asset('/pages/js/jquery-3.1.1.min.js') }}"></script>
 		<script src="{{ asset('/pages/bootstrap/js/bootstrap.min.js') }}"></script>
 		<script src="{{ asset('/pages/js/wow.min.js') }}"></script>
@@ -38,5 +37,6 @@
 	            });
 	        });
 		</script>
+		@include('pages.layout.modal')
 	</body>
 </html>
