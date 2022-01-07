@@ -84,3 +84,10 @@ function stripUnicode($str){
 function generateQr($text, $size = 50){
 	return QrCode::size($size)->generate($text);
 }
+
+function asset($path, $secure = null)
+{
+	$path = trim($path, "/");
+	$path = trim($path, "\\");
+    return url("/public/$path");
+}
